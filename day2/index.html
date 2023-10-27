@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function setUsername(){
+            document.getElementById('username-p').innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+        function setProfileImage(){
+            document.getElementById("profileImage").style.backgroundImage ="url(" + document.getElementById("Profile").value + ")";
+        }
+    </script>
+</head>
+
+<body\>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile-img" id="profileImage"><img style="height: 300px; width:300px;" src="">
+            </div>
+            <div class="noti">99+</div>
+        </div>
+
+        <div class="username">
+            <a href="https://github.com/kumamarkz" class="on-hover">
+            <p style="font-size: x-large; font-weight: 600;" id="username-p">Siwat's Gallery</p>    
+            </a>
+        </div>
+
+        <div class="input-group">
+            <div><label style="font-weight: 400;">Username</label><input style="margin-left: 10px;" type="text"
+                id="username"><button style="margin-left: 10px;" id="setUsername" onclick="setUsername()">Apply</button></div>
+            <div><label style="font-weight: 400;">Profile Image</label><input style ="margin-left: 10px;" type="text" 
+                id="Profile"><button style="margin-left: 5px;" id="setProfile" onclick="setProfileImage()">Apply</button></div>
+        
+        <div class="gallery">
+            <div class="gallery-item col-span">
+                <img style="height: 300px; width: 625px;" src="https://pbs.twimg.com/media/FxiLmujaUAAwNWD.jpg:large">
+            </div>
+            <div class="gallery-item"><img style="height: 300px; width: 300px;" src="https://dx.lnwfile.com/_/dx/_raw/9j/q8/zm.jpg"></div>
+            <div class="gallery-item"><img style="height: 300px; width: 300px;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/36e1d7e5-cfff-4163-ad96-784ae053a32e/dfixy5e-c9918d30-53a0-419d-bbf7-a704562a8511.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM2ZTFkN2U1LWNmZmYtNDE2My1hZDk2LTc4NGFlMDUzYTMyZVwvZGZpeHk1ZS1jOTkxOGQzMC01M2EwLTQxOWQtYmJmNy1hNzA0NTYyYTg1MTEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wLvv9-D2M1hL_i9pF9ZC_JM1bF4tmjH1YB8GlCzfXtw"></div>
+            <div class="gallery-item"><img style="height: 300px; width: 300px;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bf16e75a-87dc-46bd-9d31-7ec69d5b43f6/dfz8kqm-d09517fa-3451-4dd7-903a-413239c8b90c.jpg/v1/fill/w_960,h_832,q_70,strp/toku_manip__134_kamen_rider_geats_nine_by_rivo22245_dfz8kqm-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTExMCIsInBhdGgiOiJcL2ZcL2JmMTZlNzVhLTg3ZGMtNDZiZC05ZDMxLTdlYzY5ZDViNDNmNlwvZGZ6OGtxbS1kMDk1MTdmYS0zNDUxLTRkZDctOTAzYS00MTMyMzljOGI5MGMuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.e-ggA58tc4vgjIddEKB1svQ_LhYFS-U5s_SAtu5nNq8"></div>
+            <div class="gallery-item rows-span">
+                <img style="height: 625px; width: 300px;" src="https://pbs.twimg.com/media/Fz2ZASYacAALa2U.jpg:large">
+            </div>
+            <div class="gallery-item"><img style="height: 300px; width: 300px;" src="https://assets.mycast.io/actor_images/actor-kamen-rider-tycoon-580708_large.jpg?1667186610"></div>
+            <div class="gallery-item"><img style="height: 300px; width: 300px;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/36e1d7e5-cfff-4163-ad96-784ae053a32e/dfhetk8-9c5d0655-c2bf-4452-94e1-4880b271eb68.png/v1/fill/w_746,h_1071/kamen_rider_buffa_zombie_form_2_render_by_neorider217_dfhetk8-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM1NyIsInBhdGgiOiJcL2ZcLzM2ZTFkN2U1LWNmZmYtNDE2My1hZDk2LTc4NGFlMDUzYTMyZVwvZGZoZXRrOC05YzVkMDY1NS1jMmJmLTQ0NTItOTRlMS00ODgwYjI3MWViNjgucG5nIiwid2lkdGgiOiI8PTk0NiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.MXTJYyeyW1f5z7RKN8NnmwDAePrmeJBgKu9aRK2TV8Q"></div>
+            <div class="gallery-item"><img style="height: 300px; width: 300px;" src="https://cdn.suruga-ya.com/database/pics_light/game/646158991.jpg"></div>
+            <div class="gallery-item"><img style="height: 300px; width: 300px;" src="https://cdn.suruga-ya.com/database/pics_light/game/646139442.jpg"></div>
+            <div class="gallery-item"><img style="height: 300px; width: 300px;" src="https://i.ebayimg.com/images/g/jIoAAOSwaeRfWZP9/s-l1200.webp"></div>
+        </div>
+    
+    </div>
+</body>
+
+</html>
